@@ -1,6 +1,6 @@
 import { describe, expect, test, beforeEach } from 'vitest'
 import { applyIntent } from './applyIntent'
-import { ALL_TOOLS, SPINE_TOOLS, capabilityEligibility } from './eligibility'
+import { ALL_TOOLS, SPINE_TOOLS, assetAttention, capabilityEligibility } from './eligibility'
 import { deriveToolSurface } from './deriveToolSurface'
 import { renderModel } from './renderModel'
 import { resetStore, store } from './store'
@@ -47,5 +47,19 @@ describe('G2 invariants', () => {
     const before = store.state; const beforeRender = renderModel(before); const beforeEligible = [...deriveToolSurface(before).eligible]
     applyIntent(methodology, [], 'human-ui'); const restored = undoLastAdaptation().state
     expect(restored.attention).toEqual(before.attention); expect(renderModel(restored)).toEqual(beforeRender); expect([...deriveToolSurface(restored).eligible]).toEqual(beforeEligible); expect(restored.history).toHaveLength(0)
+  })
+  test('S2 gives the matched transcript segments 05–08 focused semantic attention', () => {
+    const state = applyIntent(comparison, [], 'human-ui').state
+    for (const number of ['05', '06', '07', '08']) expect(state.attention[`video.segment.${number}`]).toBe('FOCUSED')
+    expect(state.elements['video.segment.07']?.content).toContain('about 8 percent')
+  })
+  test('S2 keeps surrounding transcript segments as context rather than flattening video attention', () => {
+    const state = applyIntent(comparison, [], 'human-ui').state
+    for (const number of ['01', '02', '03', '04', '09', '10', '11', '12']) expect(state.attention[`video.segment.${number}`]).toBe('CONTEXT')
+  })
+  test('transcript attention projects to the video asset without changing the S2 capability count', () => {
+    const state = applyIntent(comparison, [], 'human-ui').state; const surface = deriveToolSurface(state)
+    expect(assetAttention(state, 'video')).toBe('FOCUSED'); expect(assetAttention(state, 'paper')).toBe('FOCUSED')
+    expect(surface.eligible.has('compare_sources')).toBe(true); expect(surface.eligible.size).toBe(13)
   })
 })

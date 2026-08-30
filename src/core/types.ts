@@ -1,12 +1,14 @@
 export const LEVELS = { DRAWER: 0, PERIPHERAL: 1, CONTEXT: 2, FOCUSED: 3 } as const
 export type AttentionLevel = keyof typeof LEVELS
 export type ActorSource = 'human-ui' | 'webmcp-agent'
-export type ElementId = 'paper' | 'video' | 'references' | 'publisher' | 'dataset'
+export type ElementId = string
+export type AssetId = 'paper' | 'video' | 'references' | 'publisher' | 'dataset'
 export type ToolName =
   | 'get_workspace' | 'set_intent' | 'get_attention_state' | 'search_workspace' | 'list_drawer' | 'pin_element' | 'restore_capability' | 'undo_last_adaptation'
   | 'get_document_outline' | 'get_document_section' | 'get_transcript_segment' | 'list_references' | 'compare_sources' | 'subscribe_newsletter' | 'list_related_videos' | 'share_asset' | 'create_citation'
 
-export interface Element { id: ElementId; label: string; aliases: string[]; weight: number; interfaceCost: number }
+export interface SemanticLevels { peripheral: string; candidate: string; focused: string[] }
+export interface Element { id: ElementId; assetId: AssetId; label: string; aliases: string[]; weight: number; interfaceCost: number; semantic: SemanticLevels; content?: string }
 export interface Rationale { id: string; elementId: ElementId; from: AttentionLevel; to: AttentionLevel; summary: string; source: ActorSource; score: number }
 export interface Transition { attention: Record<ElementId, AttentionLevel>; pins: Partial<Record<ElementId, AttentionLevel>>; intent: ElasticState['intent']; rationale: Record<string, Rationale>; source: ActorSource }
 export interface ElasticState {

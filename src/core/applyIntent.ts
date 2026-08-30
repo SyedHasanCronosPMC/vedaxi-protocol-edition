@@ -5,10 +5,11 @@ import { scoreAll } from './score'
 import { store } from './store'
 import type { ActorSource, ElasticState } from './types'
 
+function levels(overrides: Record<string, ElasticState['attention'][string]>): ElasticState['attention'] { return { ...Object.fromEntries(Object.keys(store.state.elements).map((id) => [id, 'PERIPHERAL'])), ...overrides } }
 function fixtureAttention(intent: string, computed: ElasticState['attention']): ElasticState['attention'] {
   const text = intent.toLowerCase()
-  if (text.includes('methodology') && !text.includes('video')) return { paper: 'FOCUSED', video: 'PERIPHERAL', references: 'CONTEXT', publisher: 'DRAWER', dataset: 'CONTEXT' }
-  if (text.includes('compare') && text.includes('video')) return { paper: 'FOCUSED', video: 'FOCUSED', references: 'PERIPHERAL', publisher: 'DRAWER', dataset: 'PERIPHERAL' }
+  if (text.includes('methodology') && !text.includes('video')) return levels({ 'paper.methodology': 'FOCUSED', 'paper.results': 'CONTEXT', references: 'CONTEXT', dataset: 'CONTEXT', publisher: 'DRAWER' })
+  if (text.includes('compare') && text.includes('video')) return levels({ 'paper.methodology': 'FOCUSED', 'paper.results': 'FOCUSED', 'video.segment.01': 'CONTEXT', 'video.segment.02': 'CONTEXT', 'video.segment.03': 'CONTEXT', 'video.segment.04': 'CONTEXT', 'video.segment.05': 'FOCUSED', 'video.segment.06': 'FOCUSED', 'video.segment.07': 'FOCUSED', 'video.segment.08': 'FOCUSED', 'video.segment.09': 'CONTEXT', 'video.segment.10': 'CONTEXT', 'video.segment.11': 'CONTEXT', 'video.segment.12': 'CONTEXT', references: 'PERIPHERAL', publisher: 'DRAWER', dataset: 'PERIPHERAL', 'paper.limitations': 'PERIPHERAL' })
   return computed
 }
 export function applyIntent(intent: string, constraints: string[] = [], source: ActorSource): { state: ElasticState; surface: ReturnType<typeof deriveToolSurface> } {
