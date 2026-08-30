@@ -1,10 +1,9 @@
-main { max-width: 640px; margin: 12vh auto; padding: 32px; }
-.eyebrow { color: #2f5d50; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-.summary { max-width: 58ch; }
-dl { border-block: 1px solid #e6e2da; margin: 32px 0; }
-dl div { display: flex; justify-content: space-between; gap: 20px; padding: 12px 0; }
-dt { color: #6b6963; } dd { margin: 0; font-family: ui-monospace, Consolas, monospace; }
-.status { min-height: 3rem; color: #2f5d50; }
-button { background: #1a1a18; border: 0; border-radius: 4px; color: #fdfcfa; cursor: pointer; font: inherit; padding: 10px 14px; }
-button:disabled { cursor: not-allowed; opacity: .5; }
-ol { color: #6b6963; line-height: 1.7; margin-top: 28px; padding-left: 20px; }
+main { max-width: 1180px; margin: 0 auto; padding: 28px; }
+.intent-bar { border-bottom: 1px solid #e6e2da; display: grid; gap: 16px; padding-bottom: 20px; }
+.eyebrow { color: #2f5d50; font-size: .75rem; font-weight: 700; letter-spacing: .08em; margin: 0; text-transform: uppercase; }.disclosure, footer { color: #6b6963; font-size: .8rem; }
+form, .presets { display: flex; flex-wrap: wrap; gap: 8px; } label { font-weight: 600; width: 100%; } input { border: 1px solid #bdb8ae; border-radius: 4px; flex: 1; font: inherit; min-width: 280px; padding: 9px; }
+button { background: #1a1a18; border: 0; border-radius: 4px; color: #fdfcfa; cursor: pointer; font: inherit; padding: 9px 12px; }.presets button { background: #e6e2da; color: #1a1a18; }
+.capabilities { justify-self: end; position: relative; }.capabilities ul { background: #fdfcfa; border: 1px solid #e6e2da; list-style: none; margin: 6px 0 0; padding: 10px; position: absolute; right: 0; width: max-content; z-index: 1; }
+.workspace { display: grid; gap: 20px; grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr); margin-top: 24px; }.zone { border-top: 2px solid #e6e2da; padding-top: 10px; }.zone-focal-plane { grid-row: span 2; }.zone-peripheral-belt { grid-column: 1 / -1; }.drawer { border-left: 1px solid #e6e2da; padding-left: 18px; }
+h2 { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; }.element { border-bottom: 1px solid #eeeae3; padding: 10px 0; }.semantic { display: grid; gap: 3px; }.semantic-focused { font-size: 1.05rem; }.semantic-context { font-size: .94rem; }.semantic-peripheral { color: #8b877e; font-size: .82rem; }.semantic-drawer { color: #6b6963; font-size: .82rem; }.rationale { color: #2f5d50; display: block; margin-top: 4px; } footer { border-top: 1px solid #e6e2da; margin-top: 24px; padding-top: 12px; }
+@media (max-width: 760px) { .workspace { display: block; }.zone, .drawer { margin-top: 20px; }.drawer { border-left: 0; padding-left: 0; } }
