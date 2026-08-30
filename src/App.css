@@ -1,0 +1,10 @@
+main { max-width: 640px; margin: 12vh auto; padding: 32px; }
+.eyebrow { color: #2f5d50; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.summary { max-width: 58ch; }
+dl { border-block: 1px solid #e6e2da; margin: 32px 0; }
+dl div { display: flex; justify-content: space-between; gap: 20px; padding: 12px 0; }
+dt { color: #6b6963; } dd { margin: 0; font-family: ui-monospace, Consolas, monospace; }
+.status { min-height: 3rem; color: #2f5d50; }
+button { background: #1a1a18; border: 0; border-radius: 4px; color: #fdfcfa; cursor: pointer; font: inherit; padding: 10px 14px; }
+button:disabled { cursor: not-allowed; opacity: .5; }
+ol { color: #6b6963; line-height: 1.7; margin-top: 28px; padding-left: 20px; }
