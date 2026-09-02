@@ -1,0 +1,98 @@
+- generic [ref=e2]:
+  - link "Skip to content" [ref=e3] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e4]:
+    - link "VEDAXI home" [ref=e5] [cursor=pointer]:
+      - /url: "#top"
+      - generic [ref=e10]: VEDAXI
+    - generic [ref=e11]: Protocol edition / 01
+    - link "Source ↗" [ref=e12] [cursor=pointer]:
+      - /url: https://github.com/luxurylifestyleco/vedaxi-elastic-web
+  - main [ref=e13]:
+    - region "Evidence, without interface theatre." [ref=e16]:
+      - generic:
+        - paragraph: VEDAXI / Protocol edition / scroll to trace
+        - heading "Evidence, without interface theatre." [level=1]:
+          - text: Evidence, without interface theatre.
+          - emphasis
+        - list:
+          - listitem:
+            - generic: "00"
+            - generic:
+              - strong: Evidence, without interface theatre.
+              - paragraph: Start with a human question. VEDAXI turns that intent into a governed evidence route, not a visual scavenger hunt.
+          - listitem:
+            - generic: "01"
+            - generic:
+              - strong: Two independent origins.
+              - paragraph: Paper and Video stay separate publishers. Each owns its evidence, provenance, and tool boundary.
+          - listitem:
+            - generic: "02"
+            - generic:
+              - strong: Bounded evidence, attributed.
+              - paragraph: The agent reaches the exact video record at 00:03:12 instead of scraping a page or receiving an opaque summary.
+          - listitem:
+            - generic: "03"
+            - generic:
+              - strong: Proposal is not permission.
+              - paragraph: The agent can request focus. The editor sees the sources and explicitly decides whether to confirm it.
+          - listitem:
+            - generic: "04"
+            - generic:
+              - strong: The decision persists.
+              - paragraph: A confirmed citation block remains after reload. It is publisher state, not temporary agent memory.
+          - listitem:
+            - generic: "05"
+            - generic:
+              - strong: Control stays human-owned.
+              - paragraph: The kill switch tears down the WebMCP tool surface while preserving ordinary reading and confirmed work.
+      - generic [aria-hidden] [ref=e17]:
+        - generic [ref=e18]: Loading protocol map…
+        - generic [ref=e19]: PAPER / Origin A
+        - generic [ref=e20]: INTENT
+        - generic [ref=e21]: VIDEO / Origin B
+        - generic [ref=e22]: HUMAN GATE
+        - generic [ref=e23]: 01 / 06
+    - region [ref=e24]:
+      - generic [ref=e25]:
+        - paragraph [ref=e26]: Live product / not a simulation
+        - heading [level=2] [ref=e27]:
+          - text: Use the publishers.
+          - emphasis [ref=e28]: Review the record.
+        - paragraph [ref=e29]: These are the running VEDAXI surfaces. The Paper publisher is usable inside this page; the evidence video includes its timed narration and captions.
+      - generic [ref=e30]:
+        - article [ref=e31]:
+          - generic [ref=e32]:
+            - generic [ref=e33]:
+              - generic [ref=e34]: Origin A
+              - strong [ref=e35]: Paper publisher
+            - link "Open full screen ↗" [ref=e36] [cursor=pointer]:
+              - /url: https://vedaxi-paper-origin.vercel.app
+          - iframe [ref=e37]
+        - article [ref=e38]:
+          - generic [ref=e39]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: Origin B
+              - strong [ref=e42]: Controlled evidence video
+            - link "Open Video origin ↗" [ref=e43] [cursor=pointer]:
+              - /url: https://vedaxi-video-origin.vercel.app
+          - generic [ref=e44]: Your browser does not support HTML video.
+          - paragraph [ref=e45]: Timed evidence with captions is served directly from the independent Video origin.
+    - generic [ref=e46]:
+      - paragraph [ref=e47]: VEDAXI / Protocol edition
+      - heading [level=2] [ref=e48]:
+        - text: Publisher-governed evidence.
+        - emphasis [ref=e49]: Agent capability.
+        - text: Human authority.
+      - generic [ref=e50]:
+        - link "Paper origin ↗" [ref=e51] [cursor=pointer]:
+          - /url: https://vedaxi-paper-origin.vercel.app
+        - link "Evidence video ↗" [ref=e52] [cursor=pointer]:
+          - /url: https://vedaxi-video-origin.vercel.app
+        - link "Public source ↗" [ref=e53] [cursor=pointer]:
+          - /url: https://github.com/luxurylifestyleco/vedaxi-elastic-web
+  - contentinfo [ref=e54]:
+    - link "VEDAXI" [ref=e55] [cursor=pointer]:
+      - /url: "#top"
+    - generic [ref=e61]: Fictional research fixture. Protocol demonstration only.
+    - generic [ref=e62]: © 2026

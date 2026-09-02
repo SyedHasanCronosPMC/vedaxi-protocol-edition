@@ -1,0 +1,228 @@
+- generic [ref=e3]:
+  - link "Skip to the story" [ref=e4] [cursor=pointer]:
+    - /url: "#story"
+  - banner [ref=e6]:
+    - link "VEDAXI" [ref=e7] [cursor=pointer]:
+      - /url: "#edition"
+    - generic [ref=e12]: Signal / Archive — protocol edition
+    - link "Source ↗" [ref=e13] [cursor=pointer]:
+      - /url: https://github.com/SyedHasanCronosPMC/vedaxi-protocol-edition
+  - navigation "Story chapters" [ref=e14]:
+    - link "00 Edition" [ref=e15] [cursor=pointer]:
+      - /url: "#edition"
+      - generic [ref=e16]: "00"
+      - generic [ref=e17]: Edition
+    - link "01 The problem" [ref=e18] [cursor=pointer]:
+      - /url: "#interface-theatre"
+      - generic [ref=e19]: "01"
+      - generic [ref=e20]: The problem
+    - link "02 The protocol" [ref=e21] [cursor=pointer]:
+      - /url: "#protocol"
+      - generic [ref=e22]: "02"
+      - generic [ref=e23]: The protocol
+    - link "03 Paper origin" [ref=e24] [cursor=pointer]:
+      - /url: "#paper-origin"
+      - generic [ref=e25]: "03"
+      - generic [ref=e26]: Paper origin
+    - link "04 Video origin" [ref=e27] [cursor=pointer]:
+      - /url: "#video-origin"
+      - generic [ref=e28]: "04"
+      - generic [ref=e29]: Video origin
+    - link "05 The discrepancy" [ref=e30] [cursor=pointer]:
+      - /url: "#discrepancy"
+      - generic [ref=e31]: "05"
+      - generic [ref=e32]: The discrepancy
+    - link "06 Shared state" [ref=e33] [cursor=pointer]:
+      - /url: "#shared-state"
+      - generic [ref=e34]: "06"
+      - generic [ref=e35]: Shared state
+    - link "07 Kill switch" [ref=e36] [cursor=pointer]:
+      - /url: "#kill-switch"
+      - generic [ref=e37]: "07"
+      - generic [ref=e38]: Kill switch
+    - link "08 Developer" [ref=e39] [cursor=pointer]:
+      - /url: "#under-the-hood"
+      - generic [ref=e40]: "08"
+      - generic [ref=e41]: Developer
+    - link "09 Watch demo" [ref=e42] [cursor=pointer]:
+      - /url: "#watch-demo"
+      - generic [ref=e43]: "09"
+      - generic [ref=e44]: Watch demo
+    - link "10 Credits" [ref=e45] [cursor=pointer]:
+      - /url: "#credits"
+      - generic [ref=e46]: "10"
+      - generic [ref=e47]: Credits
+  - link "↑ Back to navigation" [ref=e48] [cursor=pointer]:
+    - /url: "#edition"
+    - text: ↑
+    - generic: Back to navigation
+  - main [ref=e49]:
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - paragraph [ref=e52]: VEDAXI / Protocol Edition / 2026
+        - heading [level=1] [ref=e53]:
+          - text: Evidence, in
+          - emphasis [ref=e54]: its right place.
+        - generic [ref=e55]:
+          - generic [ref=e56]: Begin the record
+          - generic [ref=e57]: ↓
+      - generic [ref=e58]:
+        - paragraph [ref=e59]: "A publisher-governed WebMCP proof: evidence agents can use, and people can still judge."
+        - strong [ref=e60]: Two publishers.One attributabledecision.
+      - generic [ref=e61]: A / paper record
+      - generic [ref=e62]: B / transcript record
+      - generic [ref=e63]: A source-owned route from question to confirmation.
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - paragraph [ref=e66]: 01 / The problem
+        - heading "The web we built for humans." [level=2] [ref=e67]: The web we builtfor humans.
+        - paragraph [ref=e68]: When an agent has to scrape pages, the publisher's evidence boundary is replaced with a fragile visual guess.
+      - generic [ref=e69]:
+        - generic [ref=e70]:
+          - generic [ref=e71]: Human navigation
+          - generic [ref=e72]: 7+
+          - generic [ref=e73]: pages, menus, clicks
+        - generic [ref=e74]:
+          - generic [ref=e75]: Agent capability
+          - generic [ref=e76]: "1"
+          - generic [ref=e77]: publisher-owned intent
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - paragraph [ref=e80]: 02 / The protocol
+        - heading "One intent. Not another interface." [level=2] [ref=e81]: One intent.Not anotherinterface.
+      - generic [ref=e82]:
+        - article [ref=e83]:
+          - generic [ref=e84]: "01"
+          - heading "Publisher registers" [level=3] [ref=e85]: Publisherregisters
+          - paragraph [ref=e86]: A bounded capability is exposed at the source.
+        - article [ref=e87]:
+          - generic [ref=e88]: "02"
+          - heading "Agent retrieves" [level=3] [ref=e89]: Agentretrieves
+          - paragraph [ref=e90]: Evidence is requested by intent, not scraped from a page.
+        - article [ref=e91]:
+          - generic [ref=e92]: "03"
+          - heading "Human decides" [level=3] [ref=e93]: Humandecides
+          - paragraph [ref=e94]: Consequential state stays visible and reviewable.
+    - generic [ref=e95]:
+      - generic [ref=e96]:
+        - paragraph [ref=e97]: 03 / Paper origin
+        - heading "Start with the record." [level=2] [ref=e98]: Start withthe record.
+        - paragraph [ref=e99]: The Paper publisher owns its methods evidence and exposes a read-only search route for precise retrieval.
+      - article [ref=e100]:
+        - generic [ref=e101]:
+          - generic [ref=e102]: Origin A / Paper
+          - link "Open live proof ↗" [ref=e104] [cursor=pointer]:
+            - /url: https://vedaxi-paper-origin.vercel.app
+        - button "40 Published methods record Load the live publisher product ↗" [ref=e105] [cursor=pointer]:
+          - generic [ref=e106]: "40"
+          - strong [ref=e107]: Published methods record
+          - generic [ref=e108]: Load the live publisher product ↗
+    - generic [ref=e109]:
+      - article [ref=e110]:
+        - generic [ref=e111]:
+          - generic [ref=e112]: Origin B / Video
+          - link "Open live proof ↗" [ref=e114] [cursor=pointer]:
+            - /url: https://vedaxi-video-origin.vercel.app
+        - button "00:03:12 Transcript evidence, in time Load the live publisher product ↗" [ref=e115] [cursor=pointer]:
+          - generic [ref=e116]: 00:03:12
+          - strong [ref=e117]: Transcript evidence, in time
+          - generic [ref=e118]: Load the live publisher product ↗
+      - generic [ref=e119]:
+        - paragraph [ref=e120]: 04 / Video origin
+        - heading "Time leaves a receipt." [level=2] [ref=e121]: Time leavesa receipt.
+        - paragraph [ref=e122]: The Video publisher owns the transcript. At 00:03:12 it records what the paper's cohort number leaves out.
+        - generic [ref=e123]:
+          - text: 00:03:12
+          - generic [ref=e124]: 6 excluded for calibration drift
+    - 'region "The discrepancy: 40, 6, then 34" [ref=e125]':
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - text: Evidence choreography
+          - paragraph [ref=e129]: Five moments. One attributable decision.
+        - generic [ref=e130]:
+          - generic [ref=e131]: "40"
+          - text: recruited
+        - list [ref=e132]:
+          - listitem [ref=e133]:
+            - emphasis [ref=e134]: "01"
+            - generic [ref=e135]:
+              - paragraph [ref=e136]: Paper
+              - strong [ref=e137]: 40 recruited
+              - text: The Paper origin reports 40 participants recruited.
+          - listitem [ref=e138]:
+            - emphasis [ref=e139]: "02"
+            - generic [ref=e140]:
+              - paragraph [ref=e141]: Video
+              - strong [ref=e142]: 00:03:12 / 6 excluded
+              - text: At 00:03:12, the Video origin records that 6 sessions were excluded for calibration drift and were not replaced.
+          - listitem [ref=e143]:
+            - emphasis [ref=e144]: "03"
+            - generic [ref=e145]:
+              - paragraph [ref=e146]: Agent
+              - strong [ref=e147]: Focus requested
+              - text: The agent requests a focused comparison; it does not confirm or change the citation block.
+          - listitem [ref=e148]:
+            - emphasis [ref=e149]: "04"
+            - generic [ref=e150]:
+              - paragraph [ref=e151]: Agent
+              - strong [ref=e152]: 34 derived
+              - text: The agent derives 34 analysed from the two attributed records.
+          - listitem [ref=e153]:
+            - emphasis [ref=e154]: "05"
+            - generic [ref=e155]:
+              - paragraph [ref=e156]: Human
+              - strong [ref=e157]: Citation confirmed
+              - text: The human confirms the citation block, creating persisted publisher state.
+        - generic [ref=e158]:
+          - generic [ref=e159]: ✓
+          - generic [ref=e160]: Citation block waiting for confirmation
+    - generic [ref=e161]:
+      - generic [ref=e162]:
+        - paragraph [ref=e163]: 06 / Shared state
+        - heading [level=2] [ref=e164]:
+          - text: The agentproposes.
+          - emphasis [ref=e165]: The personauthorizes.
+      - generic [ref=e166]:
+        - article [ref=e167]:
+          - generic [ref=e168]: Agent
+          - strong [ref=e169]: request_discrepancy_focus()
+          - paragraph [ref=e170]: Focuses attributed evidence without changing the record.
+        - article [ref=e171]:
+          - generic [ref=e172]: Human
+          - strong [ref=e173]: Confirmcitationblock
+          - paragraph [ref=e174]: Creates the persisted publisher decision.
+    - generic [ref=e175]:
+      - generic [ref=e176]: "0"
+      - generic [ref=e177]:
+        - paragraph [ref=e178]: 07 / Kill switch
+        - heading "Tools off. Work intact." [level=2] [ref=e179]: Tools off.Work intact.
+        - paragraph [ref=e180]: An explicit WebMCP kill switch unregisters every active tool while leaving the ordinary reading experience and confirmed result intact.
+        - button "Demonstration only" [ref=e181]: WebMCP disabled
+    - generic [ref=e183]:
+      - generic [ref=e184]:
+        - paragraph [ref=e185]: 08 / Under the hood
+        - heading "Browser-native at the boundary." [level=2] [ref=e186]: Browser-nativeat the boundary.
+      - generic [ref=e187]:
+        - code [ref=e188]:
+          - generic [ref=e189]: Paper
+          - text: "search_paper_evidence(query: string)"
+        - code [ref=e190]:
+          - generic [ref=e191]: Video
+          - text: "search_video_evidence(query: string)"
+        - code [ref=e192]:
+          - generic [ref=e193]: Human gate
+          - text: request_discrepancy_focus(input)
+    - generic [ref=e194]:
+      - generic [ref=e195]:
+        - paragraph [ref=e196]: 09 / Watch the proof
+        - heading "From question to confirmation." [level=2] [ref=e197]: From questionto confirmation.
+        - paragraph [ref=e198]: Under three minutes, from a question about the cohort to a confirmed citation. Narrated and captioned.
+      - button "Play the controlled VEDAXI evidence video" [ref=e199] [cursor=pointer]:
+        - img "Preview of the VEDAXI controlled evidence video" [ref=e200]
+        - generic [ref=e201]: ▶
+        - generic [ref=e202]: Controlled evidence video / 03:30 / Captioned
+    - generic [ref=e203]:
+      - paragraph [ref=e208]: VEDAXI
+      - heading "Evidence agents can use. People can still judge." [level=2] [ref=e209]: Evidence agents can use.People can still judge.
+      - link "Return to the beginning ↑" [ref=e210] [cursor=pointer]:
+        - /url: "#edition"
