@@ -7,14 +7,14 @@ audience: WebMCP hackathon judges
 mode: autonomous
 ---
 
-## Frame 01 — Calm becomes a question
+## Frame 01 — The fast-answer problem
 - status: outline
 - src: compositions/01-hook.html
 - duration: 12s
 - transition_in: cut
 - source_class: MOTION GRAPHIC
-- scene: Quiet editorial field fractures into provenance questions.
-- voiceover: AI made research faster. But faster answers create a harder question.
+- scene: A calm research claim is interrupted by four 3D evidence cards that slam into view—Paper 40, Video 00:03:12, derived 34, and the human decision gate. They collapse into one question: FAST ANSWER. UNKNOWN TRAIL. A final SNAP resolves directly into the real Paper origin.
+- voiceover: AI made research faster. But faster answers create a harder question. Can you still trace what came from where?
 
 ## Frame 02 — Paper evidence
 - status: outline
